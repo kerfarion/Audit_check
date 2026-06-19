@@ -1,0 +1,6 @@
+{
+  "name": "Чек-лист аудита сайтов",
+  "description": "Интерактивный чек-лист технического, SEO и UX/UI аудита сайта в стиле хай-тек минимализма.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

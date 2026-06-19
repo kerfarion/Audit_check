@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply font-mono bg-[#0b0e14] text-[#d0dbe8];
+  }
+}
+
+/* Custom visual styles for checklist instructions */
+.service-tag {
+  @apply bg-[#1f2e3b]/80 border border-[#2a4a5a] text-[#7be0b0] font-bold px-1.5 py-0.5 rounded-[2px] font-mono mx-1 inline-block text-[11px];
+}
+
+.success-criteria {
+  @apply bg-[#0f1f2a] border border-[#7be0b0]/30 text-[#7be0b0] px-3 py-2 rounded-[3px] font-mono mt-2 font-medium text-[11px] inline-block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
